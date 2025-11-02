@@ -77,7 +77,7 @@ def token_required(f):
     return decorated
 
 # Rota de login:
-@app.route("/login", methods=["POST"])
+@app.route("/api_login", methods=["POST"])
 def login():
     data = request.get_json(force=True)
     username = data.get("username")
